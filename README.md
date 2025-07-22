@@ -34,6 +34,14 @@ pip install -r requirements.txt
 
 ## ⚙️ Konfiguration
 
+### Sicherheitshinweis 🔒
+**WICHTIG**: Erstellen Sie eine `.env` Datei basierend auf `.env.example` und tragen Sie Ihre eigenen API Keys ein. Commiten Sie niemals echte API Keys zu Git!
+
+```bash
+cp .env.example .env
+# Dann bearbeiten Sie .env mit Ihren echten API Keys
+```
+
 ### OpenAI API Setup (empfohlen)
 1. Erstellen Sie einen Account bei [OpenAI](https://openai.com)
 2. Generieren Sie einen API-Key
