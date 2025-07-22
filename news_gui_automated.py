@@ -21,7 +21,8 @@ import schedule
 import logging
 
 # Load environment variables
-load_dotenv()
+load_dotenv()  # Lade Standard .env
+load_dotenv('.env.local', override=True)  # Lade private Keys (überschreibt)
 
 # Importiere das Haupt-Analysesystem
 import sys

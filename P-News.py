@@ -64,6 +64,7 @@ class NewsAnalyzer:
     def __init__(self):
         """Initialisiert den NewsAnalyzer"""
         load_dotenv()
+        load_dotenv('.env.local', override=True)  # Private API keys mit höherer Priorität
         self.console = Console() if RICH_AVAILABLE else None
         self.openai_client = None
         self.ai_model_type = os.getenv('AI_MODEL_TYPE', 'openai').lower()
